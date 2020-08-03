@@ -1,0 +1,21 @@
+.button {
+    @include button($white, $ball-blue, $open-sans, $regular, $medium);
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $gray;
+        outline: none;
+    }
+}
+
+.button-primary {
+     padding: 5px 15px 5px 15px;
+
+ }
+
+ .button-primary--lg {
+     padding: 10px 80px 10px 80px;
+ }
