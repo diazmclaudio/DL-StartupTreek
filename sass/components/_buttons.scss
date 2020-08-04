@@ -12,10 +12,12 @@
 }
 
 .button-primary {
-     padding: 5px 15px 5px 15px;
+    width: 6.25rem;
+    margin-top: 5px;
+    padding: 5px;
+}
 
- }
-
- .button-primary--lg {
-     padding: 10px 80px 10px 80px;
- }
+.button-primary--lg {
+    width: 17.5rem;
+    padding: 5px;
+}

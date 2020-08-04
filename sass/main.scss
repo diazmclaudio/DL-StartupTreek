@@ -5,13 +5,14 @@
 
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/animations';
 
 @import 'layout/navigation';
 @import 'layout/grid';
-@import 'layout/header';
+@import 'layout/main';
 @import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
+@import 'layout/price';
+@import 'layout/caracteristicas';
 
 @import 'components/buttons';
 @import 'components/cards';

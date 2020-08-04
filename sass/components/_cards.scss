@@ -1,0 +1,27 @@
+.card {
+     /* Add shadows to create the "card" effect */
+     border: 1px solid $nickel;
+     background-color: $white;
+     max-width: 55%;
+     height: 400px;
+     margin-left: 10px;
+     &:hover {
+          box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.1);
+        }
+   }
+   .card-box {
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+.card--left{
+     float: left;
+     margin-right: 40px;
+}
+
+.card--right{
+     float: right;
+     margin-right: 50px;
+}
