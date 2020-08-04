@@ -1,27 +1,34 @@
+/* Float four columns side by side */
+.column {
+     margin-left: auto;
+     margin-right: auto;
+    width: 80%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.wrapper {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+         margin-left: auto;
+         margin-right: auto;
+        width: 80%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
 .card {
-     /* Add shadows to create the "card" effect */
-     border: 1px solid $nickel;
-     background-color: $white;
-     max-width: 55%;
-     height: 400px;
-     margin-left: 10px;
-     &:hover {
-          box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.1);
-        }
-   }
-   .card-box {
-     padding-top: 5px;
-     padding-bottom: 5px;
-     padding-left: 10px;
-     padding-right: 10px;
-}
-
-.card--left{
-     float: left;
-     margin-right: 40px;
-}
-
-.card--right{
-     float: right;
-     margin-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: $white;
 }

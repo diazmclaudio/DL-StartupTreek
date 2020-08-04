@@ -361,9 +361,17 @@ img {
 }
 
 .footer {
+  max-width: 100%;
   background-color: #221d23;
   color: #fff;
   padding: 50px 0;
+}
+.footer span {
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #bababa;
 }
 
 .price {
@@ -383,8 +391,16 @@ img {
   color: #fff;
 }
 
-img {
+.caracteristicas img {
   max-width: 100%;
+}
+.caracteristicas h1 {
+  text-align: center;
+}
+
+.caracteristicas--center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -414,33 +430,36 @@ img {
   padding: 5px;
 }
 
+/* Float four columns side by side */
+.column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Style the counter cards */
 .card {
-  /* Add shadows to create the "card" effect */
-  border: 1px solid #726f73;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
   background-color: #fff;
-  max-width: 55%;
-  height: 400px;
-  margin-left: 10px;
-}
-.card:hover {
-  box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-box {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.card--left {
-  float: left;
-  margin-right: 40px;
-}
-
-.card--right {
-  float: right;
-  margin-right: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
