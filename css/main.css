@@ -17,6 +17,33 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #8f9199;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@keyframes mover {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 2em;
+  }
+}
 /* Header Layout
  ========================================================================== */
 .navigation {
@@ -354,11 +381,6 @@ img {
   max-width: 500px;
   height: auto;
 }
-.main__box p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
 
 .footer {
   max-width: 100%;
@@ -403,6 +425,25 @@ img {
   margin-right: auto;
 }
 
+.animation {
+  animation-name: mover;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.bar-graph .a-bar:hover {
+  fill: #2ab7ca;
+  transition: all 1s cubic-bezier(0, 0, 1, 1) 0.5s;
+}
+.bar-graph .b-bar:hover {
+  fill: #ee9480;
+  transition: all 1s cubic-bezier(0, 0, 1, 1) 0.5s;
+}
+
 .button {
   color: #fff;
   background-color: #2ab7ca;
@@ -427,7 +468,7 @@ img {
 
 .button-primary--lg {
   width: 17.5rem;
-  padding: 5px;
+  padding: 10px;
 }
 
 /* Float four columns side by side */
@@ -457,9 +498,25 @@ img {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
   background-color: #fff;
+}
+.card hr {
+  width: 17.5rem;
+}
+
+.card__box {
+  height: 9.375rem;
+}
+.card__box ul > li {
+  text-align: left;
+  margin-left: 2.8125rem;
+  color: #8f9199;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 0.625rem;
 }
 
 /*# sourceMappingURL=main.css.map */

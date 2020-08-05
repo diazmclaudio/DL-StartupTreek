@@ -1,14 +1,33 @@
-.caracteristicas{
+.caracteristicas {
     img {
         max-width: 100%;
     }
-    h1{
+    h1 {
         text-align: center;
     }
-   
 }
 
-.caracteristicas--center{
+.caracteristicas--center {
     margin-left: auto;
     margin-right: auto;
+}
+.animation {
+    animation-name: mover;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.bar-graph {
+    .a-bar:hover {
+        fill: $ball-blue;
+        transition: all 1s cubic-bezier(0, 0, 1, 1) 0.5s;
+    }
+    .b-bar:hover {
+        fill: $dark-salmon;
+        transition: all 1s cubic-bezier(0, 0, 1, 1) 0.5s;
+    }
 }

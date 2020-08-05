@@ -1,7 +1,7 @@
 /* Float four columns side by side */
 .column {
-     margin-left: auto;
-     margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
 }
 
@@ -17,8 +17,8 @@
 /* Responsive columns */
 @media screen and (max-width: 600px) {
     .column {
-         margin-left: auto;
-         margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 80%;
         display: block;
         margin-bottom: 20px;
@@ -28,7 +28,24 @@
 /* Style the counter cards */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
     background-color: $white;
+
+    hr {
+        width: 17.5rem;
+    }
+}
+
+.card__box {
+    height: 9.375rem;
+    ul > li {
+        text-align: left;
+        margin-left: 2.8125rem;
+        color: $spanish-gray;
+        font-family: $open-sans;
+        font-weight: $regular;
+        font-size: $small;
+        padding-top: 0.625rem;
+    }
 }
