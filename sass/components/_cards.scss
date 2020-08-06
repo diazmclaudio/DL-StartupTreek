@@ -2,7 +2,7 @@
 .column {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 75%;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -19,7 +19,7 @@
     .column {
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 70%;
         display: block;
         margin-bottom: 20px;
     }
@@ -27,18 +27,19 @@
 
 /* Style the counter cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
     text-align: center;
     background-color: $white;
-
-    hr {
-        width: 17.5rem;
+    &:hover{
+        box-shadow: 0 4px 8px 0 rgb(134, 190, 216,1);
     }
+    
 }
-
+hr {
+    width: 17.5rem;
+}
 .card__box {
-    height: 9.375rem;
+    height: 12.375rem;
     ul > li {
         text-align: left;
         margin-left: 2.8125rem;
