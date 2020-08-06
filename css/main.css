@@ -449,11 +449,6 @@ input:checked ~ .navigation__container {
   font-weight: 400;
   color: #bababa;
 }
-@media (min-width: 481px) {
-  .footer .footer--rigth {
-    float: inherit;
-  }
-}
 
 .price {
   background-image: url(../images/bg-price.svg);
